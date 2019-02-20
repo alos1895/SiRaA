@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserInterfaz"
+    android:background="#ffffff">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/sira"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:id="@+id/tvEstadoEstacionado"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/background_dark"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/idPitar"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#ffffff"
+            android:src="@drawable/sonar" />
+    </LinearLayout>
+    <Space
+    android:layout_width="match_parent"
+    android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="240dp"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivG"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/g" />
+
+                <ImageView
+                    android:id="@+id/ivF"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/f" />
+
+                <ImageView
+                    android:id="@+id/ivI"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/i" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="240dp"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivL"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/l" />
+
+                <ImageView
+                    android:id="@+id/ivCentro"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="#fff" />
+
+                <ImageView
+                    android:id="@+id/ivR"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/r" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="240dp"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivH"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/h" />
+
+                <ImageView
+                    android:id="@+id/ivB"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/b" />
+
+                <ImageView
+                    android:id="@+id/ivJ"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/j" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="210dp"
+            android:layout_height="500dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#4357f1">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    app:srcCompat="@drawable/izquierda_alto" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Por Izquierda"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnBateriaIzquierda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="bi"
+                    android:text="Bateria" />
+
+                <Button
+                    android:id="@+id/btnCordonIzquierda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="ci"
+                    android:text="Cordon" />
+
+                <Button
+                    android:id="@+id/btnDiagonalIzquierda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="di"
+                    android:text="Diagonal" />
+
+
+        </LinearLayout>
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="10dp" />
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#d12c31">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                app:srcCompat="@drawable/derecha_alto" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Por Derecha"
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnBateriaDerecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="bd"
+                android:text="Bateria" />
+
+            <Button
+                android:id="@+id/btnCordonDerecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="cd"
+                android:text="Cordon" />
+
+            <Button
+                android:id="@+id/btnDiagonalDiagonal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="dd"
+                android:text="Diagonal" />
+        </LinearLayout>
+        </LinearLayout>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btnDesAparcar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="desaparcar"
+                android:text="Desaparcar" />
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tvEstadoConexion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Conectado"
+            android:textColor="#4cde2b"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/idDesconectar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Desconectar" />
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>
